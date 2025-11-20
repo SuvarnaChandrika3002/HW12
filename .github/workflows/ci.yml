@@ -28,7 +28,7 @@ jobs:
 
     env:
       
-      DATABASE_URL: postgresql+psycopg2://postgres:postgres@postgres:5432/hw12
+      DATABASE_URL: postgresql+psycopg2://postgres:postgres@localhost:5432/postgres
       
 
     steps:

@@ -14,9 +14,9 @@ jobs:
       postgres:
         image: postgres:15
         env:
-          POSTGRES_DB: postgres
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: hw12
         ports:
           - 5432:5432
         
@@ -28,7 +28,7 @@ jobs:
 
     env:
       
-      DATABASE_URL: postgresql+psycopg2://postgres:postgres@postgres:5432/postgres
+      DATABASE_URL: postgresql+psycopg2://postgres:postgres@postgres:5432/hw12
       
 
     steps:
